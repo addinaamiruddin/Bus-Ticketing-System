@@ -304,12 +304,4 @@ public class Converter extends JFrame implements ActionListener
             outAmount.setText("");
         }
     }
-    public void JbtnExitActionPerformed(java.awt.event.ActionEvent evt)
-    {
-        JFrame Frame = new JFrame("Exit");
-        
-        if (JOptionPane.showConfirmDialog( Frame,"confirm if you Want to Exit","Name of the Application or Title",
-            JOptionPane.YES_NO_OPTION)==JOptionPane.YES_OPTION)
-            System.exit(0);
-    }
 }
