@@ -39,6 +39,10 @@ public class Snake {
             snakePoints.set(i,snakePoints.get(i-1));//to update snake body
         }
         snakePoints.set(0, newStart);
+            if (elongate) {
+                snakePoints.add(last);
+                elongate=false;
+            }
         }
     }
     public boolean snakeCollision() {
@@ -77,5 +81,8 @@ public class Snake {
     public int getY(){
         //head position of the snake
         return snakePoints.get(0).getY();
+    }
+    public void setElongate(boolean b) {
+        elongate=b;
     }
 }
