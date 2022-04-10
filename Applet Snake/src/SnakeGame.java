@@ -124,4 +124,3 @@ public class SnakeGame extends Applet implements Runnable,KeyListener{
         
     }
 }
-
